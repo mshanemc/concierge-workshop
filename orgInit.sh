@@ -5,7 +5,9 @@ sfdx force:data:record:update -s User -w "Name='User User'" -v "UserPermissionsK
 sfdx force:source:push
 sfdx force:user:permset:assign -n solutions
 sfdx force:data:bulk:upsert -f data/Knowledge__kav.csv -i id -s Knowledge__kav --wait 30
+# sfdx automig:load -d data
 
 sfdx force:apex:execute -f scripts/conciergeSetup.cls
 
+sfdx automig:load -d data2
 sfdx force:org:open

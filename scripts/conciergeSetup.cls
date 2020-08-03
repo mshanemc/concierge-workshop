@@ -11,13 +11,6 @@ for (cncrgdemo2__Concierge_Settings__c setting:settings) {
 }
 update settings;
 
-cncrgdemo2__Search_Types_Settings__c x = new cncrgdemo2__Search_Types_Settings__c();
-x.cncrgdemo2__Active__c = true;
-x.Name = 'Concierge';
-x.cncrgdemo2__Article_Type_API_Name__c = 'Concierge';
-x.cncrgdemo2__Fields_To_Display_1__c = 'Summary';
-insert x;
-
 // put the contact on our user
 List<case> cases = new List<case>();
 
@@ -61,3 +54,11 @@ update kavs;
 for (Knowledge__ka ka:[select id from Knowledge__ka]){
     KbManagement.PublishingService.publishArticle(ka.Id, true);
 }
+
+// set the article types/field
+// cncrgdemo2__Search_Types_Settings__c x = new cncrgdemo2__Search_Types_Settings__c();
+// x.cncrgdemo2__Active__c = true;
+// x.Name = 'Concierge';
+// x.cncrgdemo2__Article_Type_API_Name__c = 'Concierge';
+// x.cncrgdemo2__Fields_To_Display_1__c = 'Summary,';
+// insert x;
