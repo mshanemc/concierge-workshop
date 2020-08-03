@@ -1,2 +1,0 @@
-﻿Id,IsDeleted,Name,SetupOwnerId,CreatedDate,CreatedById,LastModifiedDate,LastModifiedById,SystemModstamp,cncrgdemo2__Engine_Type__c,cncrgdemo2__Max_Suggestions__c,cncrgdemo2__Maximum_number_of_articles_to_retrieve__c,cncrgdemo2__Postgres_Table_Name__c
-a0K0x0000038J1lEAE,,Search Engine Configurations,00D0x000000AU7AEAW,2020-08-03T19:56:04.000+0000,0050x00000409JUAAY,2020-08-03T19:56:04.000+0000,0050x00000409JUAAY,2020-08-03T19:56:04.000+0000,Salesforce,10,200,

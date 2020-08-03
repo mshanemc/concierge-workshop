@@ -7,7 +7,7 @@ for (cncrgdemo2__Concierge_Settings__c setting:settings) {
         setting.cncrgdemo2__Value__c = 'false';
     } else if (setting.name == 'Text to Display in Article Preview'){
         setting.cncrgdemo2__Value__c = 'false';
-    }
+    } 
 }
 update settings;
 
@@ -54,11 +54,3 @@ update kavs;
 for (Knowledge__ka ka:[select id from Knowledge__ka]){
     KbManagement.PublishingService.publishArticle(ka.Id, true);
 }
-
-// set the article types/field
-// cncrgdemo2__Search_Types_Settings__c x = new cncrgdemo2__Search_Types_Settings__c();
-// x.cncrgdemo2__Active__c = true;
-// x.Name = 'Concierge';
-// x.cncrgdemo2__Article_Type_API_Name__c = 'Concierge';
-// x.cncrgdemo2__Fields_To_Display_1__c = 'Summary,';
-// insert x;
